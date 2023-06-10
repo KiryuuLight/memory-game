@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: #fdf100;
+  --secondary-color: #ebae00;
+  --black: #2d2e21;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+main {
+  color: var(--white);
+}
+
+.nav-text {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-text-primary {
+  font-size: 4.2rem;
+  font-weight: bold;
+}
+
+.nav-text-secondary {
+  font-size: 2rem;
+}
+
+.logo {
+  width: 20rem;
+}
+
+.score-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.game-text {
+  background-color: var(--black);
+  padding: 1rem 0.89rem;
+}
+
+.card-section {
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(6, 190px);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: var(--secondary-color);
+  border: 3px solid #282115;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  height: 205px;
+}
+
+/* Modal */
+
+dialog {
+  z-index: 1;
+  position: absolute;
+  background-color: var(--black);
+  border-radius: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  width: 48rem;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--white);
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: left;
+}
+
+.message-primary-text {
+  font-size: 5.8rem;
+}
+
+.message-secondary-text {
+  font-size: 1.8rem;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  color: #fbe16c;
+  padding: 10px;
+  background: #52ae4d;
+  width: fit-content;
+  font-weight: bold;
+}
+
+/* Effects */
+
+.blur-and-deactivate {
+  filter: blur(1rem);
+  pointer-events: none;
+}
