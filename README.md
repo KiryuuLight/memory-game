@@ -1,6 +1,4 @@
 # Memory Game
-[Live Demo](https://kiryuulight.github.io/memory-game/)
+[Live Demo](https://kiryuulight.github.io/where-is-waldo/)
 
-This is a simple memory game created using React. The theme of the project is inspired by the game Persona 4. 
-
-All credits to their respective authors.
+This is a photo tagging app built with React and Firebase storage. In this app, users are challenged to find all the characters in the shortest possible time. Once completed, their scores are uploaded to the firestore database.
